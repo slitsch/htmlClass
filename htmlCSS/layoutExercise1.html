@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>layoutExercises 1</title>
+    <style>
+        
+        body {
+            margin: 0;
+        }
+        div {
+            border: 1px solid #333;
+            width: 200px;
+            height: 200px;
+            overflow: auto;
+            position: relative;
+            z-index: 3;
+            background: royalblue;
+        }
+
+        p {
+            color: red;
+        }
+
+        div p {
+            color: #fff;
+        }
+
+        #box1 {
+            background: lightgray;
+            position: absolute;
+            z-index: 5;
+            top: 0;
+            right: 0;
+        }
+
+        #box2 {
+            position: static;
+        }
+
+        .tinybox {
+            width: 100px;
+            height: 50px;
+            background-color: red;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            overflow: hidden;
+        }
+
+        #bg {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        #bg img {
+            width: 100%;
+        }
+
+        .span1 {
+            border-width: 2px;
+            border-style: groove;
+            border-color: purple;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div id="bg">
+        <img src="kitten.jpg" alt="A photo of a small tabby kitten"/>
+    </div>
+    <div id="box1">
+        <h1>Box 1</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse facilis ipsam iusto mollitia. Aut consectetur corporis dolorum et id ipsa, itaque iusto minima nihil nostrum, quibusdam recusandae unde veritatis, vero?
+        </p>
+    </div>
+    <div id="box2">
+        <h1>
+            box 2
+        </h1>
+        <div class="tinybox">
+            <p>tiny box!</p>
+        </div>
+    </div>
+    <span class="span1">span2</span>
+    <div id="box3" class="span1">Box 3</div>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at atque aut, labore magni optio reprehenderit repudiandae veritatis. Error hic laboriosam, magni nesciunt numquam vitae? Ad neque pariatur quis veniam.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at atque aut, labore magni optio reprehenderit repudiandae veritatis. Error hic laboriosam, magni nesciunt numquam vitae? Ad neque pariatur quis veniam.
+    </p><p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at atque aut, labore magni optio reprehenderit repudiandae veritatis. Error hic laboriosam, magni nesciunt numquam vitae? Ad neque pariatur quis veniam.
+    </p><p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at atque aut, labore magni optio reprehenderit repudiandae veritatis. Error hic laboriosam, magni nesciunt numquam vitae? Ad neque pariatur quis veniam.
+    </p><p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at atque aut, labore magni optio reprehenderit repudiandae veritatis. Error hic laboriosam, magni nesciunt numquam vitae? Ad neque pariatur quis veniam.
+    </p><p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at atque aut, labore magni optio reprehenderit repudiandae veritatis. Error hic laboriosam, magni nesciunt numquam vitae? Ad neque pariatur quis veniam.
+    </p><p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at atque aut, labore magni optio reprehenderit repudiandae veritatis. Error hic laboriosam, magni nesciunt numquam vitae? Ad neque pariatur quis veniam.
+    </p><p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at atque aut, labore magni optio reprehenderit repudiandae veritatis. Error hic laboriosam, magni nesciunt numquam vitae? Ad neque pariatur quis veniam.
+    </p><p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at atque aut, labore magni optio reprehenderit repudiandae veritatis. Error hic laboriosam, magni nesciunt numquam vitae? Ad neque pariatur quis veniam.
+    </p><p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at atque aut, labore magni optio reprehenderit repudiandae veritatis. Error hic laboriosam, magni nesciunt numquam vitae? Ad neque pariatur quis veniam.
+    </p><p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at atque aut, labore magni optio reprehenderit repudiandae veritatis. Error hic laboriosam, magni nesciunt numquam vitae? Ad neque pariatur quis veniam.
+    </p><p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at atque aut, labore magni optio reprehenderit repudiandae veritatis. Error hic laboriosam, magni nesciunt numquam vitae? Ad neque pariatur quis veniam.
+    </p><p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at atque aut, labore magni optio reprehenderit repudiandae veritatis. Error hic laboriosam, magni nesciunt numquam vitae? Ad neque pariatur quis veniam.
+    </p><p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at atque aut, labore magni optio reprehenderit repudiandae veritatis. Error hic laboriosam, magni nesciunt numquam vitae? Ad neque pariatur quis veniam.
+    </p>
+</body>
+</html>
