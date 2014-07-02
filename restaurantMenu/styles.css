@@ -1,5 +1,94 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    color: darkgreen;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
 .specialDishes {
     border: 3px solid red;
     border-radius: 10px;
     padding: 10px;
+    margin: 5px;
+    font-size: 12px;
+}
+
+.specialDishes thead td {
+    color: red;
+    font-weight: normal;
+    width: 40px;
+    font-size: 9px;
+}
+
+.specialDishes thead td:nth-child(3) {
+    width: 150px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.columns {
+    width: 100%;
+    margin: 5px;
+}
+
+.col {
+    float: left;
+    width: 45%;
+}
+
+.col:last-child {
+    margin-left: 65px;
+}
+
+.col h1,
+.col h2 {
+    text-align: center;
+    color: red;
+}
+
+.hours {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    margin-top: -1em;
+}
+
+.lunchSpecials {
+    border-bottom: 5px solid red;
+    padding-bottom: 10px;
+}
+
+.lunchSpecials p {
+    color: red;
+    font-size: 10px;
+    text-align: center;
+}
+
+span.itemNumber:first-child {
+    padding-right: 5px;
+    display: inline-block;
+    width: 30px;
+    text-align: right;
+}
+
+span.itemPrice {
+    float: right;
+}
+
+div.labels {
+    color: red;
+    font-size: 12px;
+}
+
+.labels span {
+    float: right;
+    padding-right: 7px;
+}
+
+.labels span:first-child {
+    float: none;
+    padding-left: 10px;
+    padding-right: 0;
 }
