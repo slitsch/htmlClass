@@ -1,0 +1,95 @@
+.experiment {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid #000;
+    background-color: #efefef;
+    -webkit-box-shadow: 2px 2px  5px rgba(0,0,0,0.5);
+    -moz-box-shadow: 2px 2px  5px rgba(0,0,0,0.5)  rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5)  rgba(0,0,0,0.5);
+    min-height: 300px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+#one {
+    width: 100px;
+    height: 100px;
+    transition: height 2s ease,width .5s linear,background-color .5s,padding 2s;
+    border: 1px solid deeppink;
+    background-color: pink;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#one:hover {
+    width: 80%;
+    height: 200px;
+    background-color: blue;
+    color: #fff;
+    padding-top: 10px;
+}
+
+#two {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    border: 1px solid darkgreen;
+    margin: 0 auto;
+    /*margin-top: 30px;*/
+    box-sizing: border-box;
+    transition: all 2s;
+}
+
+#two:hover {
+    -webkit-transform: rotate(30deg) skewx(10deg) translatex(100px);
+    -webkit-transform-origin: top left;
+    -moz-transform: rotate(30deg) skewx(10deg) translatex(100px);
+    -moz-transform-origin: top left;
+    transform: rotate(30deg) skewx(10deg) translatex(100px);
+    transform-origin: top left;
+    margin-top: 50px;
+    width: 100px;
+    background-color: tan;
+}
+
+@-webkit-keyframes ch-ch-ch-changes {
+    from {
+        height: 100px;
+        width: 100px;
+        left: 10px;
+        top: 10px;
+        -webkit-transform: rotate(0deg);
+        background-color: darkblue;
+        border-radius: 0;
+    }
+    to {
+        height: 200px;
+        width: 200px;
+        left: 50%;
+        margin-left: -100px;
+        top: 40px;
+        -webkit-transform: rotate(720deg);
+        background-color: yellowgreen;
+        border-radius: 100px;
+    }
+}
+
+#three {
+    width: 100px;
+    height: 100px;
+    background-color: darkblue;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-name: ch-ch-ch-changes;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-timing-function: ease-in-out;
+}
+
