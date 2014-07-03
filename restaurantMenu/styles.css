@@ -15,17 +15,34 @@ body {
     font-size: 12px;
 }
 
+.specialDishes table {
+    width: 100%;
+}
+
 .specialDishes thead td {
     color: red;
     font-weight: normal;
-    width: 40px;
     font-size: 9px;
+    text-align: right;
 }
 
 .specialDishes thead td:nth-child(3) {
     width: 150px;
     font-size: 16px;
     font-weight: bold;
+    text-align: left;
+}
+
+.specialDishes tbody td {
+    text-align: right;
+}
+
+.specialDishes tbody td:first-child {
+    width: 10px;
+}
+
+.specialDishes tbody td:nth-child(3) {
+    text-align: left;
 }
 
 .columns {
@@ -67,7 +84,7 @@ body {
 }
 
 span.itemNumber:first-child {
-    padding-right: 5px;
+    padding-right: 17px;
     display: inline-block;
     width: 30px;
     text-align: right;
@@ -75,6 +92,20 @@ span.itemNumber:first-child {
 
 span.itemPrice {
     float: right;
+}
+
+span.itemPrice.large {
+    margin-right: -73px;
+}
+
+span.itemPrice.small {
+    margin-right: 42px;
+}
+
+span.itemDescription {
+    font-size: 10px;
+    display: block;
+    margin-left: 51px;
 }
 
 div.labels {
@@ -91,4 +122,42 @@ div.labels {
     float: none;
     padding-left: 10px;
     padding-right: 0;
+}
+
+.spicy {
+    color: red;
+}
+
+.spicy span.itemNumber:first-child {
+    background-image: url('pepper.gif');
+    background-repeat: no-repeat;
+    background-position: right;
+    transition: all 150ms;
+}
+
+.spicy>div:hover {
+    cursor: url(pepper.gif),auto;
+}
+
+.spicy>div:hover span.itemNumber:first-child {
+    background-position: 90% -2px;
+}
+
+
+.disclaimer .warning {
+    background: url('pepper.gif') no-repeat 57px 3px;
+    padding-left: 20px;
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin-top: 1em;
+}
+
+span.solution {
+    font-size: 10px;
+    text-align: center;
+    display: block;
+    font-style: italic;
 }

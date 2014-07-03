@@ -17,6 +17,11 @@
     width: 100px;
     height: 100px;
     transition: height 2s ease,width .5s linear,background-color .5s,padding 2s;
+    -webkit-transition-delay: 3s;
+    -moz-transition-delay: 3s;
+    -ms-transition-delay: 3s;
+    -o-transition-delay: 3s;
+    transition-delay: 3s;
     border: 1px solid deeppink;
     background-color: pink;
     margin: 0 auto;
@@ -91,5 +96,12 @@
     -webkit-animation-direction: alternate;
     -webkit-animation-delay: 2s;
     -webkit-animation-timing-function: ease-in-out;
+
+    -moz-animation-duration: 5s;
+    -moz-animation-name: ch-ch-ch-changes;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: alternate;
+    -moz-animation-delay: 2s;
+    -moz-animation-timing-function: ease-in-out;
 }
 
