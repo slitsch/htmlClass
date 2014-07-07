@@ -80,17 +80,7 @@
 			* only use once per page
 		* Classes	
 			* multiple uses
-			* adding multiple classes to a single element
-* Colors
-	* Multiple methods for notation
-		* hexcode 
-			* \#efefef
-		* rgb(0,0,0)
-		* rgba(255,255,255,0.5) (rgb with alpha channel)
-		* names
-			* white
-			* darkgray
-			* maroon	
+			* adding multiple classes to a single element				
 * HTML 5 Specific tags
 	* header
 	* hgroup
@@ -117,6 +107,17 @@
 * syntax of rules
 	* selector, curly brace, rules.
 	* must end with ';'
+* Colors
+	* Multiple methods for notation
+		* hexcode 
+			* \#efefef
+		* rgb(0,0,0)
+		* rgba(255,255,255,0.5) (rgb with alpha channel)
+		* keywords
+			- https://developer.mozilla.org/en-US/docs/Web/CSS/color_value
+			- white
+			- maroon
+			- blue
 * Block level elements
 	* div
 	* html5 elements
@@ -186,6 +187,14 @@
 	* image
 	* shorthand
 	* multiple
+		- https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Using_multiple_backgrounds
+* Effects
+	- text-shadow
+	- box-shadow
+	- border-radius
+	- gradients
+		+ http://css-tricks.com/css3-gradients/
+		+ http://www.colorzilla.com/gradient-editor/
 
 	
 	
