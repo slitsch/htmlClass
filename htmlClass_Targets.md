@@ -111,3 +111,81 @@
 	
 
 ##CSS
+* Order of precedence
+* How the cascade works
+	* tag cascade
+* syntax of rules
+	* selector, curly brace, rules.
+	* must end with ';'
+* Block level elements
+	* div
+	* html5 elements
+		* article
+		* aside
+		* nav
+		* footer
+		* header
+	* h1,h2,h3, etc.
+	* img
+* Inline elements
+* Traditional Box Model
+* adding rules in the html page
+* using the 'link' tag to load a separate css file
+* Selector syntax
+	* Parent
+	* descendent 
+	* child '>'
+	* sibling '+'
+	* attribute selectors
+		* ~=
+		* =
+* Positioning
+	* absolute
+	* static
+	* relative
+	* fixed.
+* Float
+	* left
+	* right
+	* clearing floats
+* Display
+	* block
+	* inline
+	* inline-block
+	* table
+	* table-cell
+	* table-row
+	* flex
+	* inline-flex
+* box-sizing
+* fonts 
+	* size
+	* style
+	* family
+		* setting types
+	* variant
+* text 
+	* align
+	* transform
+	* decoration
+	* indent
+	* shadow
+* margin
+	* four (4) values
+	* shorthand
+* padding
+	* four (4) values
+	* shorthand
+* border
+	* 4 values
+	* shorthand
+* background
+	* position
+	* repeat
+	* color
+	* image
+	* shorthand
+	* multiple
+
+	
+	
