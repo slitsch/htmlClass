@@ -1,0 +1,163 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    color: darkgreen;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.specialDishes {
+    border: 3px solid red;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    font-size: 12px;
+}
+
+.specialDishes table {
+    width: 100%;
+}
+
+.specialDishes thead td {
+    color: red;
+    font-weight: normal;
+    font-size: 9px;
+    text-align: right;
+}
+
+.specialDishes thead td:nth-child(3) {
+    width: 150px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.specialDishes tbody td {
+    text-align: right;
+}
+
+.specialDishes tbody td:first-child {
+    width: 10px;
+}
+
+.specialDishes tbody td:nth-child(3) {
+    text-align: left;
+}
+
+.columns {
+    width: 100%;
+    margin: 5px;
+}
+
+.col {
+    float: left;
+    width: 45%;
+}
+
+.col:last-child {
+    margin-left: 65px;
+}
+
+.col h1,
+.col h2 {
+    text-align: center;
+    color: red;
+}
+
+.hours {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    margin-top: -1em;
+}
+
+.lunchSpecials {
+    border-bottom: 5px solid red;
+    padding-bottom: 10px;
+}
+
+.lunchSpecials p {
+    color: red;
+    font-size: 10px;
+    text-align: center;
+}
+
+span.itemNumber:first-child {
+    padding-right: 17px;
+    display: inline-block;
+    width: 30px;
+    text-align: right;
+}
+
+span.itemPrice {
+    float: right;
+}
+
+span.itemPrice.large {
+    margin-right: -73px;
+}
+
+span.itemPrice.small {
+    margin-right: 42px;
+}
+
+span.itemDescription {
+    font-size: 10px;
+    display: block;
+    margin-left: 51px;
+}
+
+div.labels {
+    color: red;
+    font-size: 12px;
+}
+
+.labels span {
+    float: right;
+    padding-right: 7px;
+}
+
+.labels span:first-child {
+    float: none;
+    padding-left: 10px;
+    padding-right: 0;
+}
+
+.spicy {
+    color: red;
+}
+
+.spicy span.itemNumber:first-child {
+    background-image: url('pepper.gif');
+    background-repeat: no-repeat;
+    background-position: right;
+    transition: all 150ms;
+}
+
+.spicy>div:hover {
+    cursor: url(pepper.gif),auto;
+}
+
+.spicy>div:hover span.itemNumber:first-child {
+    background-position: 90% -2px;
+}
+
+
+.disclaimer .warning {
+    background: url('pepper.gif') no-repeat 57px 3px;
+    padding-left: 20px;
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin-top: 1em;
+}
+
+span.solution {
+    font-size: 10px;
+    text-align: center;
+    display: block;
+    font-style: italic;
+}
