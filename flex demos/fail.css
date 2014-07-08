@@ -1,0 +1,31 @@
+header {
+    min-height: 100px;
+    background-color: tomato;
+    color: antiquewhite;
+}
+
+aside, article {
+    float: left;
+}
+
+aside {
+    width: 20%;
+    background: lightgoldenrodyellow;
+}
+
+aside:last-of-type {
+    background: lightsalmon;
+}
+
+article {
+    width: 60%;
+}
+
+footer {
+    clear: both;
+    background: #ccc;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+}
+
