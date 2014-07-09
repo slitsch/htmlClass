@@ -1,0 +1,118 @@
+body {
+   padding: 0;
+   font-family: "helvetica", sans-serif;
+   color: darkblue;
+   max-width: 900px;
+   margin: 5 auto;
+}
+
+form {
+    border: 1px solid #333;
+    width: 800px;
+    height: 200px;
+    overflow: auto;
+    position: relative;
+    z-index: 3;
+    background: lightgray;
+}
+
+h1 {
+    text-align: center;
+    font-family: "'Open Sans", sans-serif;
+    font-weight: 800;
+}
+
+#rankapp {
+    background: none repeat scroll 0% 0% rgba(255, 255, 255, 0.9);
+    margin: 130px 0px 40px;
+    border: 1px solid #CCC;
+    position: relative;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2), 0px 25px 50px 0px rgba(0, 0, 0, 0.15);
+}
+
+#new-rank {
+    display: block;
+    padding: 10px;
+    /*border: 1px, darkgray;*/
+    background-color:white;
+    z-index: 2;
+    box-shadow: none;
+    font-size: 20px;
+    color: darkblue;
+    position: absolute;
+    bottom: 50px;
+    left: 40px;
+    width: 500px;
+    /*-moz-box-align: center;*/
+    /*-webkit-box-align: center;*/
+}
+
+
+/* :not(:checked) is a filter, so that browsers that don’t support :checked don’t
+   follow these rules. Every browser that supports :checked also supports :not(), so
+   it doesn’t make the test unnecessarily selective */
+.rating {
+    width: 200px;
+    float: right;
+}
+.rating:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+    clip:rect(0,0,0,0);
+}
+
+.rating:not(:checked) > label {
+    float:right;
+    width:1em;
+    padding:0 .1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:200%;
+    line-height:1.2;
+    color:#ddd;
+    text-shadow:1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:before {
+    content: '★ ';
+}
+
+.rating > input:checked ~ label {
+    color: #f70;
+    text-shadow:1px 1px #c60, 2px 2px #940, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color: gold;
+    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+    color: #ea0;
+    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating > label:active {
+    position:relative;
+    top:2px;
+    left:2px;
+}
+
+#submit {
+    font-size: 20px;
+    position: absolute;
+    bottom: 5px;
+    left: 300px;
+}
+
+#listOf {
+    font-size: 20px;
+}
