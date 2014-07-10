@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: black;
+    min-height: 144px;
+    color: #fff;
+}
+
+#logo {
+    width: 96px;
+    height: 96px;
+    float: left;
+    background-color: darkred;
+    margin: 24px;
+}
+
+#bannerText {
+    font-size: 24px;
+    line-height: 144px;
+}
+
+#nav {
+    background-color: whitesmoke;
+    border-bottom: 1px solid #ccc;
+}
+
+#nav ul,
+#nav li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nav>ul {
+    /*max-height: 48px;*/
+    text-align: center;
+}
+
+#nav>ul>li {
+    display: inline-block;
+    position: relative;
+}
+
+.navLink {
+    text-decoration: none;
+    color: #000;
+    line-height: 4;
+    font-size: 12px;
+    display: block;
+    padding: 0 26px;
+    width: 150px;
+    box-sizing: border-box;
+    transition: all .25s linear;
+}
+
+body.contact .navLink.contact,
+body.home .navLink.home{
+    background-color: #ccc;
+}
+
+#nav > ul > li:hover .navLink {
+    background-color: darkred;
+    color: #fff;
+}
+
+.subMenu {
+    display: none;
+    position: absolute;
+    background-color: darkred;
+    transition: all .5s ease;
+}
+
+.subMenu li {
+    text-align: center;
+}
+
+.subMenu a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 3;
+    padding: 0 10px;
+    width: 150px;
+    box-sizing: border-box;
+    transition: all .25s ease;
+}
+
+.subMenu a:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+#nav > ul > li:hover .subMenu {
+    display: block;
+
+}
+
+
+.content {
+
+}
+
+.main {
+    margin-right: 200px;
+    box-sizing: border-box;
+    padding: 10px 10px 10px 20px;
+}
+
+.sidebar {
+    float: right;
+    width: 200px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-left: 10px;
+}
+
