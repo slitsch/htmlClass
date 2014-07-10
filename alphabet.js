@@ -1,6 +1,10 @@
 /**
- * Created by B.Vaughn on 7/10/2014.
+ * Created by Ben Vaughan on 7/10/2014.
  */
+
+// split the alphabet, display every other letter.
+// Every third letter that is display needs to be capitalized.
+    
 var abc = 'abcdefghijklmnopqrstuvwxyz';
 var arr = abc.split('');
 var t = 1;
