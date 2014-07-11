@@ -1,0 +1,218 @@
+body {
+    background-color: green;
+    font-family: sans-serif;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+}
+
+.field {
+    background-color: green;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.infield {
+    width: 250px;
+    height: 250px;
+    background-color: darkgreen;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(45deg);
+    position: absolute;
+    bottom: 75px;
+    left: 125px;
+    z-index: 2;
+}
+
+.infield * {
+    z-index: 2;
+    position: relative;
+}
+
+.homePlate,
+.pitchersMound,
+.basePath {
+    background-color: tan;
+}
+
+.basePath {
+    position: absolute;
+    z-index: 1;
+    width: 250px;
+    height: 250px;
+}
+
+.base {
+    width: 14px;
+    height: 14px;
+    background-color: white;
+    position: absolute;
+}
+
+.firstBase {
+    top: 0;
+    right: 0;
+}
+
+.secondBase {
+    top: 0;
+    left: 0;
+}
+
+.thirdBase {
+    bottom: 0;
+    left: 0;
+}
+
+.homePlate {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: -15px;
+    right: -15px;
+    border-radius: 25px;
+}
+
+.pitchersMound {
+    width: 60px;
+    height: 60px;
+    border-radius: 35px;
+    position: absolute;
+    top: 95px;
+    left: 95px;
+}
+
+.path1 {
+    -webkit-transform: rotate(45deg);
+    bottom: 68px;
+    left: 118px;
+    width: 264px;
+    height: 264px;
+}
+
+.path2 {
+    right: 64px;
+    border-top-right-radius: 177px;
+    width: 208px;
+    height: 199px;
+    top: 100px;
+}
+
+.path3 {
+    left: 64px;
+    border-top-left-radius: 177px;
+    width: 208px;
+    height: 199px;
+    top: 100px;
+}
+
+.path4 {
+    display: none;
+}
+
+
+
+.battersbox {
+    width: 28px;
+    height: 17px;
+    position: absolute;
+    z-index: 3;
+    bottom: 14px;
+    left: 50%;
+    margin-left: -13px;
+    border: 1px solid #fff;
+
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+}
+
+.lbox {
+    border: 1px solid #fff;
+    height: 15px;
+    width: 8px;
+    float: left;
+}
+
+.rbox {
+    border: 1px solid #fff;
+    float: right;
+    width: 8px;
+    height: 15px;
+    position: relative;
+}
+
+div.rubber {
+    background: #fff;
+    width: 15px;
+    height: 5px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    position: absolute;
+    left: 17px;
+    bottom: 31px;
+}
+
+@-webkit-keyframes runtofirst {
+    from {
+        -webkit-transform: translate(0,0) skewX(35deg);
+    }
+    to {
+        -webkit-transform: translate(180px, -170px) skewX(35deg);
+    }
+}
+
+@-webkit-keyframes jump {
+    from {
+        -webkit-transform: translateY(0px);
+    } to {
+        -webkit-transform: translateY(-10px);
+          }
+}
+
+@-webkit-keyframes runtosecond {
+    from {
+        -webkit-transform: translate(180px, -170px);
+    } to {
+        -webkit-transform: translate(12px, -337px);
+    }
+}
+
+@-webkit-keyframes runthebases {
+    0 {
+        -webkit-transform: translate(0, 0) skewX(35deg);
+    }
+    25% {
+        -webkit-transform: translate(180px, -170px) skewX(35deg);
+    }
+    50% {
+    -webkit-transform: translate(12px, -337px) skewX(35deg);
+    }
+    75% {
+    -webkit-transform: translate(-155px, -170px) skewX(-35deg);
+    }
+
+    100% {
+    -webkit-transform: translate(0,0);
+    }
+}
+
+#runner {
+    position: absolute;
+    bottom: 26px;
+    left: 50%;
+    z-index: 5;
+    margin-left: -19px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    -webkit-transform-origin: 0%,0%;
+    -webkit-animation-iteration-count: 1,15;
+    -webkit-animation-direction: normal, alternate-reverse;
+    -webkit-animation-name: runthebases,jump;
+    -webkit-animation-delay: 0s,0s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-duration: 1s,400ms;
+}
+

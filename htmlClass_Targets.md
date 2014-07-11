@@ -10,6 +10,17 @@
 	* base
 	* link
 	* meta
+		* charset
+		* http-equiv
+		* default-style
+		* refresh
+		* set-cookie
+		* application-name
+		* author
+		* description
+		* generator
+		* keywords
+		* viewport
 	* style
 * Types of Tags
 	* inline
@@ -93,6 +104,7 @@
 	* canvas
 	* block
 * HTML 5 Data Storage
+	* Index DB
 	* Local Storage
 	* Web SQL
 * User Agents
@@ -159,13 +171,15 @@
 	* flex
 	* inline-flex
 * box-sizing
-* fonts 
+* font-
 	* size
+	* weight
 	* style
 	* family
 		* setting types
 	* variant
-* text 
+	* line-height
+* text-
 	* align
 	* transform
 	* decoration
@@ -195,6 +209,20 @@
 	- gradients
 		+ http://css-tricks.com/css3-gradients/
 		+ http://www.colorzilla.com/gradient-editor/
+		
+* @media queries
+	* https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Media_queries
+	* min/max-width
+	* min/max-height
+	* orientation
+	* aspect ration
+	* resolution
+		* min-resolution: 2dppx
+		
+##Other
+* ARIA
+	* https://developermozilla.org/en-US/docs/Web/Accessibility/An_overview_of_accessible_web_applications_and_widgets
+	
 
 	
 	
